@@ -89,18 +89,18 @@
             block: "start"
         });
         currentIndex = index;
-        setTimeout(() => isScrolling = false, 1000); // Pastikan cukup waktu sebelum scroll berikutnya
+        setTimeout(() => isScrolling = false, 800); 
     }
 
     window.addEventListener("wheel", (event) => {
         if (isScrolling) return;
-        event.preventDefault(); // Cegah scroll bawaan browser agar tidak double
+        event.preventDefault();
         if (event.deltaY > 0) {
             scrollToSection(currentIndex + 1);
         } else {
             scrollToSection(currentIndex - 1);
         }
-    }, { passive: false }); // Pastikan event.preventDefault() berfungsi
+    }, { passive: false }); 
 
     window.addEventListener("keydown", (event) => {
         if (isScrolling) return;
