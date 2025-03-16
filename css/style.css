@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #e6e6e6;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.section {
+  scroll-snap-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #e6e6e6;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 500px;
+  height: 100vh;
+}
+
+.profile-text {
+  max-width: 500px;
+  text-align: left;
+  font-size: 22px;
+}
+
+.profile-text h2 {
+  padding-left: 1px;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.profile-text p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.foto-profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  margin: 0 15px;
+  transition: color 0.3s, transform 0.2s ease-in-out;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-menu a:hover {
+  color: blue;
+}
+
+.nav-nama {
+  font-size: 24px;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 500px;
+  height: 100vh;
+}
+.section-text {
+  max-width: 500px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.section-text h2 {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.video-box {
+  width: 300px;
+  height: 300px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#kontak {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 12.5%;
+}
+
+#kontak .section-text {
+  max-width: 500px;
+  text-align: left;
+}
